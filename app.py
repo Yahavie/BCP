@@ -33,6 +33,7 @@ def predict():
          return render_template('index.html', prediction_text='THE PATIENT IS MORE LIKELY TO HAVE A MALIGNANT CANCER WITH PROBABILITY VALUE  {}'.format(y_prob))
         
 @app.route('/predict_api',methods=['POST'])
+
 def predict_api():
 
     data = request.get_json(force=True)
