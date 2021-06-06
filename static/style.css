@@ -28,33 +28,34 @@ p{
 }
 
 body, html {
-  height: 110%;
+  height: 100%;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2px;
   margin-bottom: 0px;
   font-family: Raleway-SemiBold, sans-serif;
+ 
 }
 
-.container_main{
+/*.container_main{
   height: 95%;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2px;
   margin-bottom: auto;
-	font-family: Raleway-SemiBold, sans-serif;
+font-family: Raleway-SemiBold, sans-serif;
   display: block;
   background-color: #ebeff5;
-}
+}*/
 
 a {
-	font-family: Raleway-SemiBold;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
+font-family: Raleway-SemiBold;
+font-size: 14px;
+line-height: 1.7;
+color: #666666;
+margin: 0px;
 }
 
 .main{
@@ -62,11 +63,11 @@ a {
 }
 
 a:focus {
-	outline: none !important;
+outline: none !important;
 }
 
 a:hover {
-	text-decoration: none;
+text-decoration: none;
 }
 .highlight{
   text-decoration: underline !important;
@@ -74,7 +75,7 @@ a:hover {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	margin-bottom: 1px;
+margin-bottom: 1px;
 }
 
 .main_heading{
@@ -90,22 +91,22 @@ h1,h2,h3,h4,h5,h6 {
 input {
   border-radius: 10px !important;
   /*height: 43px !important;*/
-  width: 70%; 
+  width: 70%;
 }
 
-label { 
-  float: right; 
-} 
+label {
+  float: right;
+}
 
-span { 
-  display: block; 
-  overflow: hidden; 
-  padding: 0px 4px 0px 6px; 
-} 
+span {
+  display: block;
+  overflow: hidden;
+  padding: 0px 4px 0px 6px;
+}
 
 button {
   border-radius: 20px !important;
-	outline: none !important;
+outline: none !important;
   height: 40px !important;
   width: 100px;
   color: #ffffffff !important;
@@ -118,7 +119,7 @@ button.btnsub{
 }
 
 button:hover {
-	cursor: pointer;
+cursor: pointer;
 }
 
 table.t1 {
