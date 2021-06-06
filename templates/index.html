@@ -6,33 +6,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="static/style.css"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
      <!-- add icon link -->
-     <link rel = "icon" type = "image/x-icon" href ="static/logo_tr.png">  
+     
     <title>Breast Cancer Prediction Model</title>
-    <meta charset="utf-8" name="viewport" 
-    content= "width=device-width, initial-scale=1.0">
-    <!-- <style>
-      div {
-        background-image: url('static/bg.png');
-      }
-      </style> -->
+   
   </head>
-  
+ 
   <body>
     <div class="container_main">
       <div class="sub_container" id="holder">
-          <table>
-            <tr><td><IMG SRC="static/logo_tr.png" ALT="tries" WIDTH=185 HEIGHT=129></td>
+          <br> <br><table>
+            <tr>
             <td><center><h1 class='main_heading'>Breast Cancer Prediction Model</h1></center></td>
           </tr>
         </table>
         <hr style="height:3px;border-width:0;color:gray;background-color:gray">
-        <p>XGBoost model is developed based on 10 features that classify whether the breast cancer is benign or malignant.For classifying the patient, users are requested to submit their data on this following form as per the value range provided in the input placeholder.
-        </p>
+        <p>For classifying the patient, users are requested to submit their data on this following form as per the value range provided in the input placeholder.
+        <b>[Note: For predicted value, please check the footer of the table.]</b></p>
         <table class="t1">
         <form class="form-horizontal" action="{{ url_for('predict')}}" method="post">
-          
           <div class="form-group">
             <div class="col-sm-10">
                 <thead>
@@ -59,7 +52,7 @@
         </div>
       </div>
 
-      
+     
       <div class="form-group">
         <div class="col-sm-10">
           <tr><td><label for = "concavity_mean">Concavity Mean:</label></td>
@@ -70,7 +63,7 @@
       </td></tr>
         </div>
       </div>
-      
+     
       <div class="form-group">
         <div class="col-sm-10">
         <tr><td><label for = "area_se">Area SE:</label></td>
@@ -81,7 +74,7 @@
         </td></tr>
         </div>
       </div>
-      
+     
       <div class="form-group">
         <div class="col-sm-10">
           <tr><td><label for = "concavity_se">Concavity SE:</label></td>
@@ -92,7 +85,7 @@
         </td></tr>
         </div>
       </div>
-      
+     
       <div class="form-group">
         <div class="col-sm-10">
           <tr><td><label for = "fractal_dimension_se">Fractal Dimension SE:</label></td>
@@ -103,7 +96,7 @@
         </td></tr>
         </div>
       </div>
-      
+     
       <div class="form-group">
         <div class="col-sm-10">
           <tr><td><label for = "smoothness_worst">Smoothness Worst:</label></td>
@@ -160,4 +153,3 @@
   </table>
   </body>
 </html>
-
